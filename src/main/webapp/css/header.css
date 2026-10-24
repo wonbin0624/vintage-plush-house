@@ -1,0 +1,207 @@
+/* 导入字体 */
+@font-face {
+    font-family: 'Search Font';
+
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    position: relative;   /*相对布局*/
+    background-color: #f1cfdf;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;     /* 左右的外边距为auto，居中显示 */
+    width:1080px;
+    height:70px;
+    position: relative;
+    /* background-color: yellow; */
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 80%;
+    /*background-color: yellowgreen;*/
+
+}
+.navbar-button{
+    position: relative;
+    float: left;
+    margin: 0;
+    background-color: transparent;
+    background-image: none;
+    border:1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-nav li{
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.navbar-nav > li > a{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 23px 18px;
+    display: block;
+    border-left: 1px solid #f9e9f1;
+
+}
+.navbar-nav > li > a:hover{
+    background-color: #d3b2c4;
+}
+.caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid transparent ;
+    border-right: 4px solid transparent;
+    margin-left: 8px;
+    vertical-align: middle;
+
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    width: 170px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    padding: 10px 15px ;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu > li > h4{
+    display: block;
+    padding: 3px 0px;
+    font-size: 17px;
+    color: #f1cfdf;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    width: 170px;
+}
+.dropdown-menu> li > ol > li{
+    clear:both;
+    padding: 8px 0;
+}
+
+
+.dropdown-menu> li > ol > li a{
+    color: #d3b2c4;
+}
+
+.header-info{/*搜索栏和购物车图标的样式*/
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 20%;
+    height: 70px;
+    background-color: #f1cfdf;
+}
+
+.header-info .search-box{
+    float: left;
+    border-left: 1px solid #f1cfdf;
+    width:80px;
+    height: 70px;
+    text-align: center;
+
+}
+
+.header-info .cart-box{
+    float: left;
+    border-left: 1px solid #f1cfdf;
+    text-align: center;
+    height: 70px;
+    width: 100px;
+
+}
+
+.header-info .fonticon{
+    position: relative;
+    top:1px;
+    display: inline-block;
+    font-family: 'Search Font';     /*使用导入的字体*/
+    font-size: 26px;
+    font-weight: normal;
+    color:#fff;
+    line-height: 70px;    /* 文字这一行的高度和div容器的高度一致，文字就会垂直居中 */
+}
+
+
+.cart-num{
+    color:#fff;
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+
+/* 从字体图标中找到 放大镜的图标 */
+.search-icon:before{
+    content:'\e003';
+}
+/* 从字体图标中找到  购物车图标 */
+.cart-icon:before{
+    content: '\e116';
+}
+
+/* 鼠标移动到搜索框图标，显示搜索文本框和按钮区域 */
+.header-info .search-box:hover .search-form{
+    display: block;  /* 显示 */
+}
+
+.header-info .search-box .search-form{
+    display: none;
+    width: 240px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    padding: 10px 5px 0 5px;
+}
+/*  显示搜索条的 三角图标 */
+.header-info .search-box .search-form .navbar-form:before{
+    content: '';  /* 插入内容空，设置边框 */
+    position: absolute;
+    left: 11%;   /* 控制三角形图标 水平位置 */
+    top: -14%;    /* 控制三角形图标 垂直位置 */
+    border-left: 12px solid rgba(0,0,0,0);
+    border-right: 12px solid rgba(0,0,0,0);
+    border-bottom: 12px solid #fff;
+}
+
+
+/* 搜索的文本框样式 */
+.header-info .search-box input[type="text"]{
+    margin: 0;
+    padding: 6px 10px 6px 15px;   /* 上 右  下  左 */
+    outline: none;
+    color:#000;
+    background: none;
+    border:1px solid #d3b2c4;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 75%;
+}
+/* 搜索的按钮的样式 */
+.header-info .search-box button{
+    border:none;
+    background-color: #d3b2c4;
+    color:#fff;
+    width: 25%;
+    float: right;
+    padding: 5px;
+    border-radius: 2px;
+}

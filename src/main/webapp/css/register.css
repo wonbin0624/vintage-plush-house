@@ -1,0 +1,49 @@
+.page{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+.register{
+    padding: 56px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+.register-top-grid h3{
+    color: rgb(230, 163, 187);
+    font-size: 38px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: 400;
+
+}
+.register-top-grid .input-box{
+    margin: 10px 0;
+}
+.register-top-grid span{
+    color: rgb(195, 161, 175);
+    font-size: 12px;
+    padding-bottom: 2px;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.register-top-grid input[type="text"], .register-top-grid  input[type="password"]{
+    border: 1px solid #bfe5f6;
+    outline-color: #f5dbe8;
+    width: 96%;
+    font-size: 14px;
+    padding: 10px;
+}
+.register-but{
+    margin-top: 18px;
+}
+.register-but input[type="submit"]{
+    color: #fcebef;
+    background-color: rgb(240, 214, 225);
+    border: 2px solid #fcebef;
+    font-size: 14px;
+    padding: 8px 12px;
+    display: inline-block;
+    outline: none;
+}

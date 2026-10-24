@@ -1,0 +1,60 @@
+<link type="text/css"  rel="stylesheet" href="css/style_v2.css">
+<link type="text/css"  rel="stylesheet" href="css/header.css">
+<link type="text/css" rel="stylesheet" href="css/register.css">
+<link type="text/css" rel="stylesheet" href="css/footer.css">
+
+
+<div class="header">
+    <div class="container">
+        <nav class="navbar">
+            <button class="navbar-button">
+                <ul class="navbar-nav">
+                    <!-- 修正 li 标签闭合问题 -->
+                    <li><a href="/index">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="btn">玩偶分类<b class="caret"></b></a>
+                        <ul class="dropdown-menu" id="menu">
+                            <li>
+                                <h4>商品分类</h4>
+                                <ol>
+                                    <li><a href="/goods?method=goodsList">全部系列</a></li>
+                                    <li><a href="#" class="cute-animal">小猫派ᨐ</a></li>
+                                    <li><a href="#" class="cute-animal">小狗派ฅฅ</a></li>
+                                    <li><a href="#" class="cute-animal">小兔派ᕬᕬ</a></li>
+                                    <li><a href="#" class="cute-animal">小鼠派ᐢᐢ</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/goods?method=goodsRecommendList&type=2">热销</a></li>
+                    <li><a href="/goods?method=goodsRecommendList&type=3">新品</a></li>
+                    <li><a href="user_register.jsp">注册</a></li>
+                    <li><a href="user_login.jsp">登录</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="user_center.jsp">个人中心</a></li>
+                    <li><a href="/user?method=logout">退出</a></li>
+                    <li><a href="#">后台管理</a></li>
+                </ul>
+            </button>
+        </nav>
+        <div class="header-info">
+            <div class="search-box">
+                <a href="javascript:;">
+                    <span class="icon icon-search">
+                    </span>
+                </a>
+                <div class="search">
+                    <form class="navbar-form" action="#">
+                        <input type="text" name="keyword"/>
+                        <button type="submit" class="btn-default">搜索</button>
+                    </form>
+                </div>
+            </div>
+            <div class="search-box">
+                <a href="goods_cart.jsp">
+                    <span class="icon icon-cart"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

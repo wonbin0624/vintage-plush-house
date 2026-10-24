@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    display: block;
+    padding: 50px;
+    background-color: #f2f6f7;
+    font-size: 13px;
+    color: #999;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* 移除默认边距 */
+}

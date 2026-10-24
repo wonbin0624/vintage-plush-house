@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    font-family:  "Comic Sans MS", "Arial Rounded MT Bold", "Segoe UI";
+    background-color: #fff5f8;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+label{
+    margin: 0;
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+
+/* 商品卡片边框 */
+.product-grid {
+    border: 2px solid #f8e1e6;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+/* 鼠标悬停时卡片效果 */
+.product-grid:hover {
+    border-color: #f3ccd5;
+    box-shadow: 0 4px 12px rgba(243, 204, 213, 0.3);
+    transform: translateY(-3px);
+}
+
+/* 加入购物车按钮 */
+.item_add {
+    color: #8c6c73;
+    font-weight: bold;
+    background-color: #f8e1e6;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Arial Rounded MT Bold", "Segoe UI", sans-serif;
+}
+
+.item_add:hover {
+    background-color: #f3ccd5;
+    color: #7a5e64;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(243, 204, 213, 0.5); /* 阴影 */
+}
+
+/* 商品名称样式 */
+.product-info-cust h4 {
+    font-family: "Comic Sans MS", "Segoe UI", sans-serif;
+    color: #8c6c73;
+    margin-bottom: 5px;
+}
+
+/* 价格样式 */
+.item_price {
+    color: #ff9aa2;
+    font-weight: bold;
+}
+
+.alert-info {
+    background-color: #f8e1e6;  /*修改新品推荐的颜色*/
+    color: #8c6c73;
+}
+
+.alert-danger {
+    background-color: #f3ccd5; /*修改热销推荐的颜色*/
+    border-color: #f3ccd5;
+    color: #8c6c73;
+}
+
+.alert-danger:hover {
+    background-color: #eebbcb;
+}
+
+.page-title {
+    font-family: "Comic Sans MS", "Arial Rounded MT Bold", "Segoe UI", sans-serif;
+    font-size: 28px;
+    color: #ff9aa2;
+    text-shadow: 0 2px 3px rgba(255, 154, 162, 0.3);
+    letter-spacing: 2px;
+    margin-bottom: 20px; /* 和下面商品列表隔开 */
+}
+
+
+/*改标题*/
+
+.cute-animal {
+    font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+    color: #ff9aa2;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+
+.cute-animal:hover {
+    color: #f3ccd5;
+    transform: translateY(-2px);
+}
+
+
+.cute-animal::before {
+    content: "🌸";
+    margin-right: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.cute-animal::after {
+    content: "🌸";
+    margin-left: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/*特殊效果*/
+.cute-animal:hover::before, .cute-animal:hover::after {
+    animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 分页 */
+.btn-info {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #f8e1e6;
+    color: #8c6c73;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+}
+
+/* 效果 */
+.btn-info:hover:not([disabled]) {
+    background-color: #f3ccd5;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(243, 204, 213, 0.3);
+}
+
+/* 禁用 */
+.btn-info[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
