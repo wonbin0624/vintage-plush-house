@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/header.css"/>
     <link type="text/css" rel="stylesheet" href="css/register.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>

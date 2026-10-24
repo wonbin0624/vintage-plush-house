@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>商品列表</title>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/default.css">
     <link type="text/css" rel="stylesheet" href="css/style_v2.css"/>
     <link type="text/css" rel="stylesheet" href="css/header.css"/>
@@ -11,7 +11,7 @@
     <!-- 引入全局 Ins 风样式 -->
     <link type="text/css" rel="stylesheet" href="css/ins-style.css"/>
 
-    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="script/cart.js"></script>
 </head>
 <body>

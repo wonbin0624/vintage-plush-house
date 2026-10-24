@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>用 户 登 录</title>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link type="text/css" rel="stylesheet" href="css/style_v2.css"/>
     <link type="text/css" rel="stylesheet" href="css/header.css"/>
     <link type="text/css" rel="stylesheet" href="css/footer.css"/>

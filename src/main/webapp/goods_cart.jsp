@@ -5,13 +5,13 @@
 	<title>购 物 车</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+	<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/default.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="css/header.css"/>
 	<link type="text/css" rel="stylesheet" href="css/footer.css"/>
     <link type="text/css" rel="stylesheet" href="css/ins-style.css"> <!-- 引入你的新样式 -->
-	<script type="text/javascript" src="script/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
